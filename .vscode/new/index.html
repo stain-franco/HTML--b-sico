@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ​la etiqueta <html> la utilizamos para crear nuestro archivo para que se pueda
+  vizualizar en el navegador -->
+<head>
+  <!-- la etiqueta <head> la implementamos para agregar la información que va a ir en el
+    cabezero de nuestra pagina -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- en las etiquetas <meta> podemos agregar información como por ejemplo el icono de la pagina -->
+  <title>Pagina prueba</title>
+  <!-- la etiqueta <title> es para colocar un nombre en la parte superior
+    de la pestaña de nuestra pagina -->
+  <link rel="stylesheet" href="style.css">
+  <!-- esta etiqueta la utilizamos para crear una relación con nuestros archivo de stilos
+  como tambien se puede utilizar para relacionar otros -->
+</head>
+​
+<body>
+  <!-- el <body> es la etiqueta donde más información vamos a colocar, ya que dentro de él
+    va a ir toda la información que queremos que se a visible en la pagina -->
+  <header>
+    <!-- la etiqueta <header> es muy parecida a la <head>, la mayor diferencia es que en 
+      la <header> vamos a colocar la información que aparezca primero en la pagina
+        por ejemplo los botones de navegaciones -->
+    <h1>Mi Página</h1>
+    <!-- las etiquetas <h1> a la <h6> la utilizamos para colocar texto tipo titulo 
+      con negrilla, siendo el #1 la letra más grande y luego se va encogiendo -->
+  </header>
+  <nav>
+    <!-- <nav> es la etiqueta que mayormente utilizamos para realizar una barra de 
+      navegación en la pagina -->
+    <a href="#">Home</a>
+    <!-- la etiquetas <a> las utilizamos para hacer referencia a un vinculo interno o externo -->
+    <a href="#about">About</a>
+    <a href="#services" onclick="seleccionar()">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <!-- dentro del body tambien podemos implentar la etiqueta <main> para indicar la 
+      parte principal o más importante dentro de nuestra pagina -->
+    <section class="paralax p-first"></section>
+    <!-- además de la etiqueta anterior, <section> la utilizamos cuando queremos 
+      dar más orden a nuestro codigo e ir separando cada parte secciones -->
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nam culpa optio aut tempora quam error,
+        corporis id inventore repellendus veniam, dicta fugiat eius hic, tempore eum possimus accusamus. Unde.</p>
+        <!-- la etiqueta <p> es una de las más comunes ya que la mayoría de veces
+          que solo queremos incluir texto la utilizamos -->
+    </section>
+    <section id="services" class="services">
+      <div class="cards">
+        <!-- las etiquetas <div> las utilizamos para cuando solo queremos realizar cambios
+          dentro de una parte de la pagina, podemos separarlo por divisiones
+        y luego de darle su debido nombre, en CSS podemos darle los estilos 
+      que queramos a esta división -->
+        <div class="card">
+          <div class="card-inner">
+            <h2>UI|UX</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <h2>Frontend</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <h2>Backend</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2>My Work</h2>
+      <img
+        src="https://img.freepik.com/psd-gratis/habitacion-artista-decorada-plantilla-pagina-web_23-2148834383.jpg?w=2000"
+        alt="projects1">
+        <!-- cuando queremos incluir imagenes dentro de nuestra pagina
+        utilizamos esta etiqueta para <img> -->
+      <img
+        src="https://img.freepik.com/psd-gratis/maqueta-pantallas-dispositivos-sensibles-aislados-vista-frontal_225210-347.jpg?w=2000"
+        alt="projects2">
+      <img src="https://www.hemisferio.com.mx/wp-content/uploads/2017/02/Mock-Up-Dispositivos-Moviles-Klega.jpg"
+        alt="porjects3">
+      <img src="https://lovestudios.es/wp-content/uploads/2019/09/Mockup-web-seguros-amador.jpg" alt="projects4">
+    </section>
+    <section class="paralax p-second"></section>
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <h2>Contac me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum magnam aliquam repellat voluptates
+          inventore soluta ducimus necessitatibus error, iusto consequatur reiciendis, ad minus dolorem debitis magni
+          beatae ratione. Aliquam.</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.7407806467941!2d-90.02728378249918!3d20.442038702817467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85f883ce4c0ccd2f%3A0x70877e9cc8f3f874!2sParque%20Central!5e0!3m2!1ses!2smx!4v1655486297904!5m2!1ses!2smx"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- La etiqueta <iframe> nos permite visualizar un documento HTML u otra página web dentro de nuestra web. Es un espacio dentro de nuestra página web, denominado marco, en el cual se muestra la otra página web con sus propias cualidades. Es decir, con sus propios estilos, contenidos, historiales de sesión y enlaces. -->
+    </section>
+  </main>
+  <footer>
+    <!-- por ultimo casi siempre utilizamos la etiqueta <footer> para definir lo que queremos
+      que se vea hasta el final de nuestra pagina, de la traducción en ingles
+    quiere decir pie de pagina -->
+    <p>&copy; 2022, All rights reserved.</p>
+  </footer>
+</body>
+</html>
